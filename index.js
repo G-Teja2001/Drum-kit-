@@ -18,7 +18,7 @@
 
 
 const ss = document.querySelectorAll(".drum").length;
-
+console.log(ss)
 for (i = 0 ; i<ss ; i++){
 
     document.querySelectorAll("button")[i].addEventListener("click",function(){
@@ -63,35 +63,35 @@ document.addEventListener("keydown", function(event){
 
 
 function makesound (key){  
-    switch (key) {
-        case "t":
-            var audio = new Audio('./sounds/crash.mp3');
-            audio.play();
-            break;
-        case "e":
-            var audio = new Audio('./sounds/kick-bass.mp3');
-            audio.play();
-            break;
-        
-        case "j":
-            var audio = new Audio('./sounds/snare.mp3');
+    switch (key) { 
+        case "w":
+            var audio = new Audio('Drum Kit Starting Files/sounds/crash.mp3');
             audio.play();
             break;
         case "a":
-            var audio = new Audio('./sounds/tom-1.mp3');
-            audio.play();
-            break;
-        case "v":
-            var audio = new Audio('./sounds/tom-2.mp3');
+            var audio = new Audio('Drum Kit Starting Files/sounds/kick-bass.mp3');
             audio.play();
             break;
         
         case "s":
-            var audio = new Audio('./sounds/tom-3.mp3');
+            var audio = new Audio('Drum Kit Starting Files/sounds/snare.mp3');
             audio.play();
             break;
+        case "d":
+            var audio = new Audio('Drum Kit Starting Files/sounds/tom-1.mp3');
+            audio.play();
+            break;
+        case "j":
+            var audio = new Audio('Drum Kit Starting Files/sounds/tom-2.mp3');
+            audio.play();
+            break;
+        
         case "k":
-            var audio = new Audio('./sounds/tom-4.mp3');
+            var audio = new Audio('Drum Kit Starting Files/sounds/tom-3.mp3');
+            audio.play();
+            break;
+        case "l":
+            var audio = new Audio('Drum Kit Starting Files/sounds/tom-4.mp3');
             audio.play();
             break;
         
